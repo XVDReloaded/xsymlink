@@ -24,7 +24,8 @@ namespace xsymlink
 {
     class Program
     {
-        public static string UsbDriveLetter = "F"; // CHANGE THIS TO YOUR USB DRIVE LETTER!
+        Console.Write("please enter your drive letter\n");
+        public static string UsbDriveLetter = Console.ReadLine(); // CHANGE THIS TO YOUR USB DRIVE LETTER!
         private static bool LinkAllDriveLetters = true;
         private static bool LinkVolumeByNumber = true;
         private static bool LinkCdrom = true;
